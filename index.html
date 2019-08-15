@@ -30,7 +30,6 @@ html {
 	border-radius: 40px;
   	width: auto;
 	padding: 0.5rem;
-	.logo { display: none;}
 }
 .sticky + .content {
   	padding-top: 20px;
@@ -40,15 +39,17 @@ html {
 <body>
 <header class="navbar" style="height: 0.5rem;">
 	<section class="navbar-section">
+		<img id="logo" style="margin-bottom:-4rem; margin-left: 1rem;" src="transparent-logo.png" alt="logo" height="35">
   	</section>
 	<section class="navbar-center">
-    		<img id="logo" style="margin-bottom:-4rem" src="transparent-logo.png" alt="logo" height="35">
   	</section>
 	<section class="navbar-section">
   	</section>
 </header>
 <header id="navbar" class="navbar">
 	<section class="navbar-section">
+  	</section>
+	<section class="navbar-center">
     		<a href="#about" class="btn btn-link">About</a>
 		<a href="#hackers" class="btn btn-link">For Hackers</a>
     		<a href="#sponsors" class="btn btn-link">For Sponsors</a>
@@ -59,16 +60,19 @@ html {
   	</section>
 </header>
 <div id="content">
-	<div class="hero hero-lg bg-dark" style="text-align: center">
-		<h1 class="text-light"><b>HackLboro </b><sup style="font-size:60%"><small class="label">BETA</small></sup></h1>
-		<h4> Loughborough University's First Hackathon! </h4>
+	<div class="hero bg-dark">
+	</div>
+	<div class="columns col-gapless bg-dark">
+  		<div class="column col-6">
+			<img style="display: block; margin-left: auto; margin-right: auto;" src="black-logo.png" alt="logo" height="120px">
+		</div>
+  		<div class="column col-6">
+			<h1  class="text-light"><b>HackLboro </b><sup style="font-size:60%"><small class="label">BETA</small></sup></h1>
+			<h4> Loughborough University's First Hackathon! </h4>
+		</div>
 	</div>
 	<div id="about" class="hero hero-lg bg-dark" style="text-align: center">
 		<h1 class="text-light"><b>About<b></h1>
-		<h4> Loughborough University's First Hackathon! </h4>
-	</div>
-	<div id="hackers" class="hero hero-lg bg-dark" style="text-align: center">
-		<h1 class="text-light"><b>Hackers<b></h1>
 		<h4> Loughborough University's First Hackathon! </h4>
 	</div>
 	<div id="sponsors" class="hero hero-lg bg-dark" style="text-align: center">
@@ -78,6 +82,9 @@ html {
 	<div id="contact" class="hero hero-lg bg-dark" style="text-align: center">
 		<h1 class="text-light"><b>Sponsors<b></h1>
 		<h4> Loughborough University's First Hackathon! </h4>
+	</div>
+	<div style="text-align: center; margin: 5rem;">
+		<p>© HackLboro 2019. All rights reserved.</p>
 	</div>
 </div>
 <script>
@@ -113,3 +120,4 @@ html {
 
 </body>
 </html>
+
