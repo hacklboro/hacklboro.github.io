@@ -7,23 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 <style>
+@media only screen and (max-width: 600px) {
+	#register {
+		display: none;
+  	}
+}
+@media only screen and (max-width: 900px) {
+	#logo {
+		display: none
+	}
+}
 html {
-  scroll-behavior: smooth;
+  	scroll-behavior: smooth;
 }
 #navbar {
-  background-color: white;
+ 	background-color: white;
 	margin: 20px;
 }
 .sticky {
-  position: fixed;
-  top: 20px;
+	position: fixed;
+  	top: 20px;
 	border-radius: 40px;
-  width: 40%;
+  	width: auto;
 	padding: 0.5rem;
 	.logo { display: none;}
 }
 .sticky + .content {
-  padding-top: 20px;
+  	padding-top: 20px;
 }
 </style>
 </head>
@@ -45,7 +55,7 @@ html {
 		<a href="#contact" class="btn btn-link">Contact</a>
   	</section>
   	<section class="navbar-section">
-      		<button style="border-radius: 40px;" class="btn btn-primary">Register</button>
+      		<button id="register" style="border-radius: 40px;" class="btn btn-primary mx-2">Register</button>
   	</section>
 </header>
 <div id="content">
