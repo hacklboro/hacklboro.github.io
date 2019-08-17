@@ -14,61 +14,69 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<script src="https://kit.fontawesome.com/88f9c34f04.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 <style>
-@media only screen and (max-width: 600px) {
-	#register {
-		display: none;
-  	}
-}
-@media only screen and (max-width: 900px) {
-	#logo {
-		display: none
-	}
-}
 html {
   	scroll-behavior: smooth;
 }
-#mainhero{
-	background: url(banner.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: lightgrey;
+body{
+	  background: linear-gradient(56deg, #94d7c6, #ffde27, #c041f0, #f04185, #f24e4e, #ff5f23, #23ffb3, #237fff, #8c2292);
+background-size: 1800% 1800%;
+
+-webkit-animation: mainhero 18s ease infinite;
+-moz-animation: mainhero 18s ease infinite;
+animation: mainhero 18s ease infinite;
 }
+
+	 @-webkit-keyframes mainhero {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+@-moz-keyframes mainhero {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+@keyframes mainhero {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+
 #navbar {
  	background-color: white;	
-	margin: 20px;
-}
-.sticky {
+	margin-left: 2rem;
 	position: fixed;
-  	top: 29px;
+  	margin-top: 1.3rem;
 	border-radius: 40px;
   	width: auto;
 	padding: 0.5rem;
-}
-.sticky + .content {
-  	padding-top: 20px;
+	border: 0px solid black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 h5{
-	font-size: 90%;
+	font-size: 95%;
 }
+
+h1{
+    	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 4rem;
+}
+h2{
+    	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 2rem;
+}
+.card{
+	border-radius: 2rem;
+	padding: 1rem;
+}
+	
 </style>
 </head>
 <body>
-<header class="navbar" style="height: 0.5rem;">
-	<section class="navbar-section">
-		<img id="logo" style="margin-bottom:-4rem; margin-left: 1rem;" src="transparent-logo.png" alt="logo" height="35">
-  	</section>
-	<section class="navbar-center">
-  	</section>
-	<section class="navbar-section">
-  	</section>
-</header>
 <header id="navbar" class="navbar">
 	<section class="navbar-section">
-  	</section>
-	<section class="navbar-center">
     		<a href="#about" class="btn btn-link">About</a>
 		<a href="#hackers" class="btn btn-link">For Hackers</a>
     		<a href="#sponsors" class="btn btn-link">For Sponsors</a>
@@ -79,57 +87,89 @@ h5{
   	</section>
 </header>
 <div id="content">
-	<div id="mainhero" class="columns col-gapless" style="padding-top: 9rem; padding-bottom: 8rem;">
-  		<div class="column col-6">
-			<img style="display: block; margin-left: auto; margin-right: auto;" src="black-logo.png" alt="logo" height="120px">
-		</div>
-  		<div class="column col-6">
-			<h1  class="text-light"><b>HackLboro </b><sup style="font-size:60%"><small class="label">BETA</small></sup></h1>
-			<h4 class="text-light"> Loughborough University's First Hackathon! </h4>
-		</div>
+	<div id="mainhero" style="padding-top: 9rem; padding-bottom: 8rem;">
+		<img style="display: block; margin-right: auto; margin-left: auto" src="new-logo.png" alt="logo" height="250rem">
+		<h1 style="color: black; text-align: center;"><b>HackLboro </b></h1>
 	</div>
-	<div id="about" class="hero bg-dark hero-lg" style="padding: 2rem;">
-		<h1 class="text-light"><b>About<b></h1>
+	<div id="about" class="hero hero-lg" style="padding: 2rem;">
+		<h2 class="text-light"><b>About<b></h2>
 		<h4> Loughborough University's First Hackathon! </h4>
 	</div>
-	<div id="hackers" class="hero hero-lg bg-dark" style="padding: 2rem;">
-		<h1 class="text-light"><b>Hackers</b></h1>
-		<div class="columns" style="margin: 1rem; text-align: center">
-			<div class="column col-6">
-				<h4> What to expect <br><br></h4>
-				<i style="font-size: 1rem;" class="fas fa-code"></i> <h5 style=" margin-bottom: 1rem"> 24h Coding-session </h5> <i style="font-size: 1rem;" class="fas fa-utensils"></i> <h5> Tasty (free) food </h5>
-				<i style="font-size: 1rem;" class="fas fa-tshirt"></i> <h5> Free stuff! </h5>
-				<i style="font-size: 1rem;" class="fas fa-handshake"></i> <h5> Meet People </h5>
-				<i style="font-size: 1rem;" class="fas fa-gifts"></i> <h5> Tons of Prizes </h5>
+	<div id="hackers" class="hero hero-lg" style="padding: 2rem;">
+		<h2 class="text-light"><b>Hackers</b></h2>
+		<div class="columns">
+			<div class="column col-4 col-xs-12">
+				<div class="card" style="color: black" >
+					<div class="card-header">
+						<div class="card-title h4">What to expect</div>
+					</div>
+					<div class="card-body">
+						<h5><i style="margin-left: 1rem;" class="fa fa-code"></i> 24h of Coding</h5> 
+						<h5><i style="margin-left: 1rem;" class="fa fa-toolbox"></i> Awesome Workshops</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-tshirt"></i> Swag Swag Swag</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-gifts"></i> Tonna Prizes</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-utensils"></i> Food & Drink</h5>
+					</div>
+        	      		</div>
 			</div>
-  			<div style="" class="column col-6">
-				<h4> What to bring </h4>
-				<i style="font-size: 2rem;" class="fas fa-utensils"></i> Free food
-				<i style="font-size: 2rem;" class="fas fa-gifts"></i>
+			<div class="column col-8 col-xs-12">
+				<div class="card" style="color: black" >
+					<div class="card-header">
+						<div class="card-title h4">Typical Questions</div>
+					</div>
+					<div class="card-body">
+						<h5><i style="margin-left: 1rem;" class="fa fa-ticket-alt"></i> Ticket release will be later this year, you can <a style="cursor: pointer;">pre-register</a> though!</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-birthday-cake"></i> You can attend if you are a student over 18, or if you graduated after 23<sup>rd</sup> Nov '18</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-dollar-sign"></i> It is free yes! Including food and drink. Sadly as of this moment we can't cover your travel expenses</h5>	
+						<h5><i style="margin-left: 1rem;" class="fa fa-book"></i> Experience/subject does NOT matter. We just want you to be creative and passionate - you'll love it!</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-arrow-right"></i> We are serious about this, our mission is to make everyone feel included and comfortable :)</h5>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="columns" style="margin: 1rem; text-align: center">
-			<div class="column col-6">
-				<h4> Where to go </h4>
-				<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=loughborough%20university%20hazlegrave&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:200px;width:auto;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:auto;}</style></div>
+		<div style="margin-top: 0.8rem;" class="columns">
+			<div class="column col-8 col-xs-12">
+				<div class="card" style="color: black" >
+					<div class="card-header">
+						<div class="card-title h4">Some Stuff to Remember</div>
+					</div>
+					<div class="card-body">
+						<h5><i style="margin-left: 1rem;" class="fa fa-location-arrow"></i> It will happen in Loughborough University's Sports Hall - <a style="cursor: pointer;">Google Maps Link</a></h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-calendar-day"></i> The date will be 10AM Saturday, February 22<sup>nd</sup> 2020 - <a style="cursor: pointer;">Google Calendar </a> or <a style="cursor: pointer;">iCalendar</a> links</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-users"></i> You can bring your own team, or leave it to us to assign you to some other team-less creators!</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-bolt"></i> In a 24h coding session, make use of our activities and resting areas to recharge</h5>	
+						<h5><i style="margin-left: 1rem;" class="fa fa-lightbulb"></i> The intellectual property of whatever you and your team produce belongs to you </h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-question"></i> Still more questions? send us an email!</h5>
+					</div>
+        	      		</div>
 			</div>
-  			<div style="" class="column col-6">
-				<h4> What to bring? </h4>
-				<i style="font-size: 2rem;" class="fas fa-utensils"></i> Free food
-				<i style="font-size: 2rem;" class="fas fa-gifts"></i>
+			<div class="column col-4 col-xs-12">
+				<div class="card" style="color: black" >
+					<div class="card-header">
+						<div class="card-title h4">What to bring</div>
+					</div>
+					<div class="card-body">
+						<h5><i style="margin-left: 1rem;" class="fa fa-address-card"></i> ID (Student, Driving, ...) </h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-laptop"></i> Laptop (duh)</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-plug"></i> Chargers (!!!)</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-smile"></i> A lets-do-it attitude</h5>	
+						<h5><i style="margin-left: 1rem;" class="fa fa-bed"></i> Sleeping Bag </h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-tooth"></i> Toiletries</h5>
+					</div>
+				</div>
 			</div>
 		</div>
-		</div>
-	<div id="sponsors" class="hero hero-lg bg-dark" style="padding: 2rem;">
-		<h1 class="text-light"><b>Sponsors<b></h1>
-		<h4> Loughborough University's First Hackathon! </h4>
 	</div>
-	<div id="contact" class="hero hero-lg bg-dark" style="padding: 2rem;">
-		<h1 class="text-light"><b>Contact<b></h1>
-		<h4> Loughborough University's First Hackathon! </h4>
+	<div id="sponsors" class="hero hero-lg" style="padding: 2rem;">		
+		
+	</div>
+	
+	</div>
+	<div id="contact" class="hero hero-lg" style="padding: 2rem;">
+		<h2 class="text-light"><b>Contact<b></h2>
 	</div>
 	<div style="text-align: center; margin: 10rem;">
-		<p>© HackLboro 2019. All rights reserved.</p>
+		<h5>© HackLboro 2019. All rights reserved.</h5>
 	</div>
 </div>
 <script>
@@ -165,4 +205,3 @@ h5{
 
 </body>
 </html>
-
