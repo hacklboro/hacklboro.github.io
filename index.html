@@ -67,9 +67,14 @@ body{
 	    	font-family: 'Gloria Hallelujah', cursive;
 		font-size: 2rem;
 	}
+
 	.card{
 		border-radius: 2rem;
 		padding: 1rem;
+}
+@media only screen and (max-width: 600px) {
+	#hackers_navbar {display: none;}
+	#sponsors_navbar {display: none;}
 }
 
 </style>
@@ -77,25 +82,25 @@ body{
 <body>
 <header id="navbar" class="navbar">
 	<section class="navbar-section">
-    		<a href="#about" class="btn btn-link">About</a>
-		<a href="#hackers" class="btn btn-link">For Hackers</a>
-    		<a href="#sponsors" class="btn btn-link">For Sponsors</a>
-		<a href="index.html" class="btn btn-link">Contact</a>
+    		<a href="#about" id="about_navbar" class="btn btn-link">About</a>
+				<a href="#hackers" id="hackers_navbar" class="btn btn-link">For Hackers</a>
+    		<a href="#sponsors" id="sponsors_navbar" class="btn btn-link">For Sponsors</a>
+				<a href="index.html" id="contact_navbar" class="btn btn-link">Contact</a>
   	</section>
   	<section class="navbar-section">
       		<button id="register" style="border-radius: 40px;" class="btn btn-primary mx-2">Register</button>
   	</section>
 </header>
 <div id="content">
-	<div id="mainhero" style="padding-top: 9rem; padding-bottom: 8rem;">
+	<div id="mainhero" style="padding-top: 7rem; padding-bottom: 2rem;">
 		<img style="display: block; margin-right: auto; margin-left: auto" src="new-logo.png" alt="logo" height="250rem">
 		<h1 style="color: black; text-align: center;"><b>HackLboro </b></h1>
 	</div>
 	<div id="about" class="hero hero-lg" style="padding: 2rem;">
 		<h2 class="text-light"><b>About<b></h2>
-			<div class="columns" style="margin: 0.8rem">
+			<div class="columns" style="">
 				<div class="column col-6 col-xs-12">
-					<div class="card" style="color: black">
+					<div class="card" style="color: black; margin: 0.8rem">
 						<div class="card-header">
 							<div class="card-title h4">What is a Hackathon</div>
 						</div>
@@ -105,7 +110,7 @@ body{
 					</div>
 				</div>
 				<div class="column col-6 col-xs-12">
-					<div class="card" style="color: black" >
+					<div class="card" style="color: black; margin: 0.8rem" >
 						<div class="card-header">
 							<div class="card-title h4">Why do Hackathons</div>
 						</div>
@@ -113,7 +118,7 @@ body{
 							<h5><i style="margin-left: 1rem;" class="fa fa-lightbulb"></i> Innovate! 24h hours worth of Hackathon can generate some cool stuff!</h5>
 							<h5><i style="margin-left: 1rem;" class="fa fa-user-friends"></i> Meet some cool people!</h5>
 							<h5><i style="margin-left: 1rem;" class="fa fa-handshake"></i> Make connections with possible employers</h5>
-							<h5><i style="margin-left: 1rem;" class="fa fa-tools"></i> It is an awesome experience, you get to do awesome work and its free!</h5>
+							<h5><i style="margin-left: 1rem;" class="fa fa-tools"></i> It is an awesome experience, you get to do cool work and its free!</h5>
 						</div>
 					</div>
 				</div>
@@ -121,9 +126,9 @@ body{
 	</div>
 	<div id="hackers" class="hero hero-lg" style="padding: 2rem;">
 		<h2 class="text-light"><b>For Hackers</b></h2>
-		<div class="columns" style="margin: 0.8rem">
+		<div class="columns" style="">
 			<div class="column col-4 col-xs-12">
-				<div class="card" style="color: black" >
+				<div class="card" style="color: black; margin: 0.8rem" >
 					<div class="card-header">
 						<div class="card-title h4">What to expect</div>
 					</div>
@@ -137,7 +142,7 @@ body{
         </div>
 			</div>
 			<div class="column col-8 col-xs-12">
-				<div class="card" style="color: black" >
+				<div class="card" style="color: black; margin: 0.8rem" >
 					<div class="card-header">
 						<div class="card-title h4">Typical Questions</div>
 					</div>
@@ -151,9 +156,9 @@ body{
 				</div>
 			</div>
 		</div>
-		<div style="margin: 0.8rem;" class="columns">
+		<div style="" class="columns">
 			<div class="column col-8 col-xs-12">
-				<div class="card" style="color: black" >
+				<div class="card" style="color: black; margin: 0.8rem" >
 					<div class="card-header">
 						<div class="card-title h4">Some Stuff to Remember</div>
 					</div>
@@ -168,7 +173,7 @@ body{
         </div>
 			</div>
 			<div class="column col-4 col-xs-12">
-				<div class="card" style="color: black" >
+				<div class="card" style="color: black; margin: 0.8rem" >
 					<div class="card-header">
 						<div class="card-title h4">What to bring</div>
 					</div>
@@ -185,7 +190,7 @@ body{
 		</div>
 	</div>
 	<div id="sponsors" class="hero hero-lg" style="padding: 2rem;">
-
+		<h2 class="text-light"><b>For Sponsors<b></h2>
 	</div>
 
 	</div>
