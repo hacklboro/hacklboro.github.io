@@ -79,7 +79,10 @@ body{
 	#hackers_navbar {display: none;}
 	#sponsors_navbar {display: none;}
 }
-
+.timelineline {
+  border-left: 2px solid grey;
+  height: 1rem;
+}
 </style>
 </head>
 <body>
@@ -91,13 +94,20 @@ body{
 				<a href="index.html" id="contact_navbar" class="btn btn-link">Contact</a>
   	</section>
   	<section class="navbar-section">
-      		<button id="register" style="border-radius: 40px;" class="btn btn-primary mx-2">Register</button>
+      		<button id="register" style="border-radius: 40px;" class="btn btn-primary mx-2">Pre-Register</button>
   	</section>
 </header>
 <div id="content">
 	<div id="mainhero" style="padding-top: 7rem; padding-bottom: 2rem;">
 		<img style="display: block; margin-right: auto; margin-left: auto" src="new-logo.png" alt="logo" height="250rem">
-		<h1 style="color: black; text-align: center;"><b>HackLboro </b></h1>
+		<h1 style="color: white; text-align: center;"><b>HackLboro </b></h1>
+	</div>
+	<br>
+	<div style="text-align: center; ">
+		<span>
+			<h4 style="color: white"> Saturday 23<sup>rd</sup> February 2019 - Loughborough University</h4>
+			<a id="register" style="border-radius: 40px; font-size: 1rem;" class="btn btn-primary mx-2">Pre-Register</a>
+		</span>
 	</div>
 	<div id="about" class="hero hero-lg" style="padding: 2rem;">
 		<h2 class="text-light"><b>About<b></h2>
@@ -108,7 +118,7 @@ body{
 							<div class="card-title h4">What is a Hackathon</div>
 						</div>
 						<div class="card-body">
-							<h5>A Hackathon is a 24h-long (or more) collaborative and creative development session, where teams (or individuals) develop a piece of software or hardware. At the end of the 24h of coding the teams will present their creation to the judges and several winners may arise - typically the leaders in each category. Examples are 'Best Ethical/For Good Hack' or 'Best Andriod App'</h5>
+							<h5>A Hackathon is a 24h-long (or more) collaborative and creative development session, where teams (or individuals) develop a piece of software or hardware. <br> <br> At the end the teams will present their creation to the judges and several winners may arise. Category examples are 'Best Ethical Hack' or 'Best Andriod App'</h5>
 						</div>
 					</div>
 				</div>
@@ -119,7 +129,7 @@ body{
 						</div>
 						<div class="card-body">
 							<h5><i style="margin-left: 1rem;" class="fa fa-lightbulb"></i> Innovate! 24h hours worth of Hackathon can generate some cool stuff!</h5>
-							<h5><i style="margin-left: 1rem;" class="fa fa-user-friends"></i> Meet some cool people!</h5>
+							<h5><i style="margin-left: 1rem;" class="fa fa-user-friends"></i> Meet some like-minded people!</h5>
 							<h5><i style="margin-left: 1rem;" class="fa fa-handshake"></i> Make connections with possible employers</h5>
 							<h5><i style="margin-left: 1rem;" class="fa fa-tools"></i> It is an awesome experience, you get to do cool work and its free!</h5>
 						</div>
@@ -129,9 +139,11 @@ body{
 	</div>
 	<div id="hackers" class="hero hero-lg" style="padding: 2rem;">
 		<h2 class="text-light"><b>For Hackers</b></h2>
-		<div class="columns" style="">
-			<div class="column col-4 col-xs-12">
-				<div class="card" style="color: black; margin: 0.8rem" >
+		<div class="columns">
+		<div class="col-8 col-xs-12">
+		<div class="columns col-12" style="">
+			<div class="column col-6 col-xs-12">
+				<div class="card" style="color: black; margin: 0.4rem" >
 					<div class="card-header">
 						<div class="card-title h4">What to expect</div>
 					</div>
@@ -144,39 +156,8 @@ body{
 					</div>
         </div>
 			</div>
-			<div class="column col-8 col-xs-12">
-				<div class="card" style="color: black; margin: 0.8rem" >
-					<div class="card-header">
-						<div class="card-title h4">Typical Questions</div>
-					</div>
-					<div class="card-body">
-						<h5><i style="margin-left: 1rem;" class="fa fa-ticket-alt"></i> Ticket release will be later this year, you can <a style="cursor: pointer;">pre-register</a> though!</h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-birthday-cake"></i> You can attend if you are a student over 18, or if you graduated after 23<sup>rd</sup> Nov '18</h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-dollar-sign"></i> It is free yes! Including food and drink. Sadly as of this moment we can't cover your travel expenses</h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-book"></i> Experience/subject does NOT matter. We just want you to be creative and passionate - you'll love it!</h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-arrow-right"></i> We are serious about this, our mission is to make everyone feel included and comfortable :)</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div style="" class="columns">
-			<div class="column col-8 col-xs-12">
-				<div class="card" style="color: black; margin: 0.8rem" >
-					<div class="card-header">
-						<div class="card-title h4">Some Stuff to Remember</div>
-					</div>
-					<div class="card-body">
-						<h5><i style="margin-left: 1rem;" class="fa fa-location-arrow"></i> It will happen in Loughborough University's Sports Hall - <a style="cursor: pointer;">Google Maps Link</a></h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-calendar-day"></i> The date will be 10AM Saturday, February 22<sup>nd</sup> 2020 - <a style="cursor: pointer;">Google Calendar </a> or <a style="cursor: pointer;">iCalendar</a> links</h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-users"></i> You can bring your own team, or leave it to us to assign you to some other team-less creators!</h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-bolt"></i> In a 24h coding session, make use of our activities and resting areas to recharge</h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-trademark"></i> The intellectual property of whatever you and your team produce belongs to you </h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-question"></i> Still more questions? send us an email!</h5>
-					</div>
-        </div>
-			</div>
-			<div class="column col-4 col-xs-12">
-				<div class="card" style="color: black; margin: 0.8rem" >
+			<div class="column col-6 col-xs-12">
+				<div class="card" style="color: black; margin: 0.4rem" >
 					<div class="card-header">
 						<div class="card-title h4">What to bring</div>
 					</div>
@@ -185,12 +166,78 @@ body{
 						<h5><i style="margin-left: 1rem;" class="fa fa-laptop"></i> Laptop (duh)</h5>
 						<h5><i style="margin-left: 1rem;" class="fa fa-plug"></i> Chargers (!!!)</h5>
 						<h5><i style="margin-left: 1rem;" class="fa fa-smile"></i> A lets-do-it attitude</h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-bed"></i> Sleeping Bag </h5>
-						<h5><i style="margin-left: 1rem;" class="fa fa-tooth"></i> Toiletries</h5>
+						<h5><i style="margin-left: 1rem;" class="fa fa-bed"></i> Sleeping Bag + Toiletries</h5>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="column col-12 col-xs-12">
+			<div class="card" style="color: black; margin: 0.8rem" >
+				<div class="card-header">
+					<div class="card-title h4">Some stuff to remember</div>
+				</div>
+				<div class="card-body">
+					<h5><i style="margin-left: 1rem;" class="fa fa-location-arrow"></i> It will happen in Loughborough University's Sports Hall - <a style="cursor: pointer;">Google Maps Link</a></h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-calendar-day"></i> The date will be 10AM Saturday, February 22<sup>nd</sup> 2020 - <a style="cursor: pointer;">Google Calendar </a> or <a style="cursor: pointer;">iCalendar</a> links</h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-users"></i> You can bring your own team, or leave it to us to assign you to some other team-less creators!</h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-bolt"></i> In a 24h coding session, make use of our activities and resting areas to recharge</h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-trademark"></i> The intellectual property of whatever you and your team produce belongs to you </h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-question"></i> Still more questions? <a style="cursor: pointer;">send us an email!</a></h5>
+					</div>
+			</div>
+		</div>
+		<div class="column col-12 col-xs-12">
+			<div class="card" style="color: black; margin: 0.8rem" >
+				<div class="card-header">
+					<div class="card-title h4">Typical questions</div>
+				</div>
+				<div class="card-body">
+					<h5><i style="margin-left: 1rem;" class="fa fa-ticket-alt"></i> Ticket release will be later this year, you can <a style="cursor: pointer;">pre-register</a> though!</h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-birthday-cake"></i> You can attend if you are a student over 18, or if you graduated after 23<sup>rd</sup> Nov '18</h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-dollar-sign"></i> It is free yes! Including food and drink. Sadly as of this moment we can't cover your travel expenses</h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-book"></i> Experience/subject does NOT matter. We just want you to be creative and passionate - you'll love it!</h5>
+					<h5><i style="margin-left: 1rem;" class="fa fa-arrow-right"></i> We are serious about this, our mission is to make everyone feel included and comfortable :)</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4 col-xs-12">
+		<div class="card" style="color: black; margin: 0.8rem" >
+			<div class="card-header">
+				<div class="card-title h4">Event Timeline</div>
+			</div>
+			<div class="card-body">
+				<h5 style="text-align: center"> <b> Pre-Event </b> </h5>
+				<h5> <b> October </b> Short Talk on Lectures</h5>
+				<h5> <b> December </b> Tickets are available </h5>
+				<h5> <b> January </b> Run-up Workshop </h5>
+				<br><br>
+				<h5 style="text-align: center"> <b>Saturday 22<sup>nd</sup> February </b> </h5>
+				<h5> <b> 10:00 </b> Participants Arrive </h5>
+				<h5> <b> 10:45 </b> Opening Ceremony </h5>
+				<h5> <b> 12:00 </b> Hacking Begins </h5>
+				<h5> <b> 12:15 </b> Sponsor Event </h5>
+				<h5> <b> 13:15 </b> Lunch </h5>
+				<h5> <b> 14:00 </b> Sponsor Event </h5>
+				<h5> <b> 15:00 </b> Sponsor Event </h5>
+				<h5> <b> 16:00 </b> Sponsor Event </h5>
+				<h5> <b> 17:00 </b> Sponsor Event </h5>
+				<h5> <b> 18:00 </b> Dinner </h5>
+				<h5> <b> 20:00 </b> Night Breakfast Bar Opens</h5>
+				<h5> <b> 21:00 </b> Sponsor Event</h5>
+				<h5> <b> 23:00 </b> Short Break</h5>
+				<h5 style="text-align: center"> <b>Sunday 23<sup>rd</sup> February </b> </h5>
+				<h5> <b> 04:00 </b> Short Break </h5>
+				<h5> <b> 07:00 </b> Short Break </h5>
+				<h5> <b> 12:00 </b> Hacking Ends </h5>
+				<h5> <b> 12:30 </b> Lunch </h5>
+				<h5> <b> 13:45 </b> Presentations </h5>
+				<h5> <b> 15:45 </b> Closing Ceremony </h5>
+				<h5> <b> 17:00 </b> LboroHack Ends </h5>
+			</div>
+		</div>
+	</div>
+</div>
 	</div>
 	<div id="sponsors" class="hero hero-lg" style="padding: 2rem;">
 		<h2 class="text-light"><b>For Sponsors<b></h2>
@@ -199,9 +246,10 @@ body{
 	</div>
 	<div id="contact" class="hero hero-lg" style="padding: 2rem;">
 		<h2 class="text-light"><b>Contact<b></h2>
+
 	</div>
 	<div style="text-align: center; margin: 10rem;">
-		<h5>© HackLboro 2019. All rights reserved.</h5>
+		<h5 style="font-size: 0.65rem; color: white;">© HackLboro 2019. All rights reserved.</h5>
 	</div>
 </div>
 <script>
