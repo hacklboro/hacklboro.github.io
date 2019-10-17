@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body style="font-size: 130%;">
+<p style="color: white; font-size: 5rem; text-align: center;"> hack<b>{<span style="color: pink">Lboro</span>}</b></p>
+<h2 style="color: white; font-size: 2rem; text-align: center; padding-bottom: 4rem;"> A step-by-step FAQ-styled document to use in meetings </h2>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>What is a Hackathon?</h2>
+      <p>A Hackathon is a collaborative, creative event where teams will develop software or hardware solutions to fix a set of problems set up by the event organizers. The event will last for 24h and it will put its atendees through a 'getting-work-done' environemnt which will be challenging yet rewarding.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Who attends a Hackathon?</h2>
+      <p>There are three clear stakeholders in a Hackathon. The organizing body (Hackathon committee, MLH, the SU, ...), the atendees (computer science students, design students, ...) and the sponsors. Sponsoring is a big part of making the event happen. </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>What is MLH?</h2>
+      <p>Major League Hacking works with independently run university hackathons and provides them with various benefits such as the MLH Hardware Lab, Code of Conduct, eligibility for Season Rankings and Event Support.[8] At the end of every season, it formulates a winner of the League based on participation and prizes and organizes an awards ceremony at their school where the MLH Hacker Cup is provided to the school. </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>How does sponsoring help?</h2>
+      <p>A sponsor can have a big say in what goes on in the event; things like choosing prize categories. Apart from that the sponsors are also important in the experience of the event - as 24h gives plenty of time to run anything from workshops to short meetings to discuss placement opportunities.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>Why HackLboro?</h2>
+      <p>In short; there are two trends and one fact. Fact One: Loughborough University has never held a 24h student-run hackathon event. Trend One: More and more university are starting to run Hackathons and Fact Two: Loughborough has been steadily increasing in both global and subject-specific leaderboards - this translates to a large pool of students who could greatly benefit from an event like this.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Step 1: Creating Partnerships</h2>
+      <p>Code{Lab} and Hack{Lboro} have joined in order to create a network of tech-related events throughout the year. More personalized workshops with special attention to certain areas will be run by Code{Lab} and, in Semester 2, Lboro{Hack} will run it's flagship event. An exciting year ahead.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>Step 2: Sorting Date and Venue</h2>
+      <p>This is what we are working to do at the moment. We have been successful in being able to filter venues down to either West Park Teaching Hub or James France. Similarly we have managed to filter down dates to the last 2 weeks of February or the first 2 weeks of March. Soon we will know more.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
