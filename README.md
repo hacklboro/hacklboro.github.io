@@ -1,2 +1,2 @@
-# rajeevj.co.uk
-Using Netlify to host my personal website
+# http://hacklboro.github.io/
+Using Github.io to host this website
