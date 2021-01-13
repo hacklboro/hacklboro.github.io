@@ -3716,3 +3716,8 @@ a.text-error:visited {
   word-break: break-word;
   word-wrap: break-word;
 }
+.img_sponsors{
+    width:10%;
+    height:10%;
+    padding-right: 0px 50px;
+}
