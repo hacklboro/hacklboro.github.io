@@ -40,6 +40,46 @@
             font-size: 2rem;
         }
 
+		.button {
+		  display: inline-block;
+		  border-radius: 3px;
+		  background-color: violet;
+		  border: none;
+		  color: #FFFFFF;
+		  text-align: center;
+		  font-size: 20px;
+		  padding: 20px;
+		  width: 200px;
+		  transition: all 0.5s;
+		  cursor: pointer;
+		  margin: 5px;
+		}
+
+		.button span {
+		  cursor: pointer;
+		  display: inline-block;
+		  position: relative;
+		  transition: 0.5s;
+		}
+
+		.button span:after {
+		  content: '\00bb';
+		  position: absolute;
+		  opacity: 0;
+		  top: 0;
+		  right: -20px;
+		  transition: 0.5s;
+		}
+
+		.button:hover span {
+		  padding-right: 25px;
+		}
+
+		.button:hover span:after {
+		  opacity: 1;
+		  right: 0;
+		}
+
     </style>
 </head>
 
@@ -61,6 +101,21 @@
 			 <center> <code class="language-javascript"> var contact = { email: 'codelab.lboro@gmail.com'; } </code></center>
         </pre>
     </div>
+	
+	 <div id=DayPlan>
+        <!--  Joana  -->
+        <!-- This section should include a link to the day plan. The structure is already in the html file, just add the times and info-->
+        <center>
+        <form>
+		<button class="button" type="submit" formaction="details.html"><span>Day Plan</span></button>
+		<button class="button" type="submit"><span>Marking Criteria</span></button>
+		<button class="button" type="submit"><span>Meet the Team</span></button>
+        </form>
+        </center>
+    </div>
+    <br>
+	
+	
     <div>
         <center>
             <a href="https://hacklboro.com/sponsorships.pdf">
@@ -80,7 +135,7 @@
         </div>
         <div>
             <h3>What will you be working on?</h3>
-            <p>A functioning system that emphasises the pieces of functinality your team considers essential to address the problem
+            <p>A functioning system that emphasises the pieces of functionality your team considers essential to address the problem
                 (you will be given a set of themes to develop a problem statement).</p>
         </div>
         <div>
@@ -146,16 +201,16 @@
     </div>
     <br>
 
-    <div id=DayPlan>
+    <!-- <div id=DayPlan> -->
         <!--  Joana  -->
         <!-- This section should include a link to the day plan. The structure is already in the html file, just add the times and info-->
-        <center><a href="details.html">
+        <!-- <center><a href="details.html">
                 <code class="language-javascript">
                     DAY PLAN
                 </code>
             </a></center>
     </div>
-    <br>
+    <br> -->
 
     <div id=MarkingCriteria>
         <!--  George  -->
