@@ -2004,14 +2004,17 @@ video.video-responsive::before {
 }
 
 .navbar {
+  background-color: #2d2d2d;
+  position: fixed;
   align-items: stretch;
+  width:100%;
   display: flex;
-  display: -ms-flexbox;
   -ms-flex-align: stretch;
   -ms-flex-pack: justify;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index:5;
 }
 
 .navbar .navbar-section {
@@ -2021,11 +2024,6 @@ video.video-responsive::before {
   -ms-flex: 1 0 0;
   flex: 1 0 0; 
   -ms-flex-align: center;
-}
-
-.navbar .navbar-section:not(:first-child):last-child {
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .navbar .navbar-center {
@@ -3721,3 +3719,454 @@ a.text-error:visited {
     height:10%;
     padding-right: 0px 50px;
 }
+
+/*
+Inserted from home.html
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #CCFFCC;
+}
+
+
+h5 {
+  font-size: 95%;
+}
+
+
+h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2rem;
+}
+
+.button {
+display: inline-block;
+border-radius: 3px;
+background-color: rgb(255, 255, 255);
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 20px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 25px;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
+/*
+Inserted from marking criteria
+*/
+*{
+  margin : 0px;
+  padding : 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  color: #2d2d2d;
+  background-color: #b8d8fc;
+}
+
+/* Putting some limit on the amount of space we can use for the page so the 
+content have some white space on the left and right side */
+.page-content-container{
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.page-title{
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px 0px;
+  font-weight: 700;
+}
+
+.table-container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+th {
+  border: 2px solid #85408b;
+  background-color: #85408b;
+  color: #dddcdc;
+  border-radius: 3px;
+}
+
+td {
+  border: 2px solid #6b526d;
+  background-color: #6b526d;
+  color: #dddcdc;
+  border-radius: 3px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ae45b6;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*
+Inserted from Meet The Team
+*/
+/* Removes any external padding or margin by default */
+*{
+  margin : 0px;
+  padding : 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body{
+  background-color: #2d2d2d;
+  color: #f4f4f4;
+}
+
+/* Putting some limit on the amount of space we can use for the page so the 
+content have some white space on the left and right side */
+.page-content-container{
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+
+.page-title{
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px 0px;
+  font-weight: 700;
+}
+
+/* This section will store the cards and will dynamically handle the number 
+of card shown based on the screen size */
+.team-info-container{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  width: 70%;
+}
+
+/* This is card/container which stores information about the member */
+.team-member-info{
+  justify-self: stretch;
+  width: 300px;
+  border-radius: 8px;
+  border: 2px solid #424242;
+  overflow: hidden;
+  background-color: #424242 ;
+}
+
+
+/* Adding some whitespace around member's info section */
+.member-about-me{
+  background-color: #424242;
+  padding: 15px 15px;
+}
+
+/* Adding some background behind the member's picture so the space around doesn't look empty */
+.member-picture{
+  padding: 10px 0px;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle,#000000 0%, #67286B 100%);
+}
+
+/* Displaying the member's picture with 50% radius and centered on the member's info card */
+.member-picture img{
+  display: block;
+  height: 150px;  
+  width: 150px;
+  /* width: 100%;   */
+  margin: 0 auto;
+  object-fit:cover;
+  border-radius: 50%;
+
+}
+
+/* make the member's name stand out */
+.member-name{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Ensure the text is centered, used to center member's name and committee role position  */
+.text-align-center{
+  text-align: center;
+}
+
+/* Since h3, h4 are very bold, this class will create remove the boldness to create font-hierarchy*/
+.font-weight-normal{
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+
+/* Making it adaptable to small displays */
+@media screen and (max-width:1024px){
+  .page-content-container{
+      margin: 0 2vw;
+  }
+}
+/*
+DAY PLAN
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2d2d2d;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline-dayplan {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline-dayplan::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container-dayplan {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container-dayplan::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ae45b6;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-dayplan {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-dayplan {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-dayplan::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-dayplan::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-dayplan::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content-dayplan {
+  padding: 20px 30px;
+  background-color: #ae45b6;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline-dayplan::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container-dayplan {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container-dayplan::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-dayplan::after,
+  .right-dayplan::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-dayplan {
+    left: 0%;
+  }
+}
+
+/*
+Extra
+*/
+
+.eventInfo{  
+  display: flex;
+}
+
+.eventBox{
+  flex: 50%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #414141;
+}
+
+.imageGrid{
+  display: flex;
+  flex-direction: column;
+}
+
+.imageRow{
+  flex-direction: row;
+  padding: 20px;
+  margin: 20px;
+  background-color: #696969;
+}
+
+.img_sponsors{
+  margin-left: 10%; 
+  margin-right: 10%;
+  width: 13%;
+}
+
+/* typewriter effect*/
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #ae45b6; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ae45b6; }
+}
+/*end of typewriter effect*/
