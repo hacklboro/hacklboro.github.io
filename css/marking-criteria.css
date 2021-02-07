@@ -1,0 +1,106 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    color: #2d2d2d;
+    background-color: #b8d8fc;
+}
+
+/* Putting some limit on the amount of space we can use for the page so the 
+content have some white space on the left and right side */
+.page-content-container{
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 3rem;
+    margin: 40px 0px;
+    font-weight: 700;
+}
+
+.table-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    border: 5px solid #684baa;
+    background-color: #7d53df;
+    color: #dddcdc;
+    border-radius: 5px;
+}
+
+td {
+    border: 5px solid #1c87c9;
+    background-color: #3694ce;
+    color: #dddcdc;
+    border-radius: 5px;
+}
+
+.td2 {
+    border: 5px solid #684baa;
+    background-color: #7d53df;
+    color: #dddcdc;
+}
+
+.td3 {
+    border: 5px solid #1c87c9;
+    background-color: #3694ce;
+    color: #dddcdc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #1c87c9;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* Making it adaptable to small displays */
+@media screen and (max-width:1024px){
+    .page-content-container{
+        margin: 0 2vw;
+    }
+}
