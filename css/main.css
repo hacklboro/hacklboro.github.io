@@ -44,6 +44,10 @@ p{
   color: #807fe2;
 }
 
+.links{
+  font-size: 1.5rem;
+}
+
 /* Grouping content ========================================================================== */
 /** Add the correct display in IE 9-. 1. Add the correct display in IE. */
 figcaption,
