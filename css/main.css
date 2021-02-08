@@ -48,6 +48,11 @@ p{
   font-size: 1.5rem;
 }
 
+.dayPlan{
+  color: white;
+  font-size: 1.24rem;
+}
+
 /* Grouping content ========================================================================== */
 /** Add the correct display in IE 9-. 1. Add the correct display in IE. */
 figcaption,
