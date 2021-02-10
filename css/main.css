@@ -40,12 +40,13 @@ ul{
 }
 
 p{
-  font-size: 2em;
-  color: #807fe2;
+  font-size: 1em;
+  color: #bf8ccc;
 }
 
 .links{
   font-size: 1.5rem;
+  color: #bf8ccc;
 }
 
 .dayPlan{
@@ -317,7 +318,8 @@ body {
 }
 
 a {
-  color: #5755d9;
+  font-size: 1rem;
+  color: #bf8ccc;
   outline: none;
   text-decoration: none;
 }
@@ -3760,8 +3762,8 @@ h5 {
 
 
 h2 {
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 2rem;
+  /*font-family: 'Gloria Hallelujah', cursive;*/
+  font-size: 1.5rem;
 }
 
 .button {
@@ -4163,8 +4165,8 @@ Extra
 }
 
 .img_sponsors{
-  margin-left: 10%; 
-  margin-right: 10%;
+  margin-left: 6.5%; 
+  margin-right: 5%;
   width: 13%;
 }
 
