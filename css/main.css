@@ -3741,7 +3741,7 @@ a.text-error:visited {
 .img_sponsors{
     width:10%;
     height:10%;
-    padding-right: 0px 50px  ;
+    padding-right: 0px 50px;
 }
 
 /*
@@ -4167,21 +4167,7 @@ Extra
 .img_sponsors{
   margin-left: 5%; 
   margin-right: 5%;
-  width: 14.5%;
-}
-
-.img_sponsors2{
-  margin-left: 5%; 
-  margin-right: 5%;
-  margin-bottom: 5%;
-  width: 14.5%;
-}
-
-.img_sponsors3{
-  margin-left: 5%; 
-  margin-right: 5%;
-  margin-bottom: 2%;
-  width: 14.5%;
+  width: 10%;
 }
 
 /* typewriter effect*/
